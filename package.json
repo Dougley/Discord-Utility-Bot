@@ -1,6 +1,6 @@
 {
   "name": "discord-helper-bot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A helper bot for Discord",
   "main": "dist/app.js",
   "scripts": {

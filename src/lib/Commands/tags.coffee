@@ -43,7 +43,7 @@ module.exports = (Bot) ->
 
       tags[tagname] =
         creator: message.author.id
-        content: args[1]
+        content: args[2]
 
       fs.writeFile path.join(__dirname, '..', '..', 'tags.json'), JSON.stringify(tags), 'utf8', (err) ->
         if err
