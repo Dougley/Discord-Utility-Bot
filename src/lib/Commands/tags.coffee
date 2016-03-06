@@ -19,6 +19,11 @@ module.exports = (Bot) ->
         does: "Adds, removes, lists, or displays a tag."
 
     if args[0].toLowerCase() == 'add'
+      if args.length == 1
+        return Bot.Messenger.sendMessage message.channel, 'COMMAND_USAGE',
+          usage: "#{Bot.user.username} #{Bot.Language.commands.tags} add <tag name> <\"tag content\">"
+          does: "Adds a tag."
+
       tagname = args[1].toLowerCase()
 
       tagname = tagname.replace /[^\w\s_-]/gi, ''
@@ -48,6 +53,11 @@ module.exports = (Bot) ->
         Bot.Messenger.sendMessage message.channel, 'SUCCESS'
 
     else if args[0].toLowerCase() == 'remove'
+      if args.length == 1
+        return Bot.Messenger.sendMessage message.channel, 'COMMAND_USAGE',
+          usage: "#{Bot.user.username} #{Bot.Language.commands.tags} remove <tag name>"
+          does: "Removes a tag."
+
       tagname = args[1].toLowerCase()
 
       tagname = tagname.replace /[^\w\s_-]/gi, ''
