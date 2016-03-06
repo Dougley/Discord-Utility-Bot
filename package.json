@@ -1,0 +1,40 @@
+{
+  "name": "discord-helper-bot",
+  "version": "1.0.0",
+  "description": "A helper bot for Discord",
+  "main": "dist/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/deansheather/discord-helper-bot.git"
+  },
+  "keywords": [
+    "Discord",
+    "Helper",
+    "Bot",
+    "DiscordBot"
+  ],
+  "author": "Dean Sheather <dean@deansheather.com>",
+  "license": "UNLICENSED",
+  "homepage": "https://bitbucket.org/deansheather/discord-helper-bot#readme",
+  "dependencies": {
+    "debug": "~2.2.0",
+    "discord.js": "~6.0.0",
+    "js-yaml": "~3.5.3",
+    "mustache": "~2.2.1",
+    "node-opus": "~0.1.12",
+    "request": "~2.69.0",
+    "splitargs": "0.0.5"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.10.0",
+    "coffeelint-stylish": "~0.1.2",
+    "expect": "~1.13.4",
+    "gulp": "~3.9.0",
+    "gulp-coffee": "~2.3.1",
+    "gulp-coffeelint": "~0.6.0",
+    "gulp-util": "~3.0.7"
+  }
+}

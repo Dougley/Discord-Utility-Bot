@@ -1,0 +1,65 @@
+---
+  "phrases":
+    "CHOOSE_OUTPUT": "I choose... {{{choice}}}."
+
+    "COMMAND_USAGE": "**Usage:** `{{{usage}}}`\n\n{{{does}}}"
+
+    "ERROR": "**ERRRRRR, CANNOT COMPUTE!** It looks like something broke...\n```\n{{{err}}}\n```"
+
+    "FIND_START": "I started searching for '{{{search}}}' by {{user}} in the last {{searchLimit}} messages in this channel. I'll DM you with the results..."
+    "FIND_NORESULTS": "Looks like I couldn't find '{{{search}}}' by {{user}} in the last {{searchLimit}} messages in {{channel.name}}... sorry!"
+    "FIND_RESULTS": "I found {{results.length}} results for '{{{search}}}' by {{user}} in the last {{searchLimit}} messages in {{channel.name}}!\n{{#results}}```\n@{{author.username}} ({{author.id}}) (Matched words: {{score}}):\n{{content}}\n```{{/results}}"
+    "FIND_RESULTSPAGE1": "I found {{results.length}} results for '{{{search}}}' by {{user}} in the last {{searchLimit}} messages in {{channel.name}}! Showing page 1 of {{pages}} (use `next` to see next page):\n{{#results}}```\n@{{author.username}} ({{author.id}}) (Matched words: {{score}}):\n{{content}}\n```{{/results}}"
+    "FIND_CONTINUE": "Showing page {{page}} of {{pages}} (use `next` to see next page): {{#results}}```\n@{{author.username}} ({{author.id}}) (Matched words: {{score}}):\n{{content}}\n```{{/results}}"
+    "FUCK_YOU": "Well fuck you too, <@{{user}}>."
+
+    "HELP": "https://github.com/deansheather/Discord-Utility-Bot/wiki/Commands-List"
+
+    "ID_AUTHOR": "Your ID is `{{id}}`."
+    "ID_NOTFOUND": "I couldn't resolve that user's ID... sorry!"
+    "ID_OTHER": "{{user.username}}'s ID is `{{id}}`."
+
+    "KILLING_BOT": "going to sleep... 😴"
+
+    "INVALID_PERMISSIONS": "You don't have permission to do that:\n```\n{{{perm}}}\n```"
+
+    "NEXT_NONEXISTENT": "I couldn't find a next for your user or this channel..."
+
+    "PERMS":
+      "OWNER": "❤"
+      "FRIEND": "you're my pal. :)"
+      "USER": "do I even know you?"
+
+    "PING_RESPONSE": "PONG!"
+
+    "ROLLDICE_OUTPUT": "🎲 I rolled a {{roll}} on a die with {{dice}} sides."
+
+    "SAD": "😢"
+    "SUCCESS": "👍"
+    "SERVER_JOINED": "👍 Successfully joined {{server.name}}."
+
+    "TAG_NONEXISTENT": "That tag doesn't exist, trying `add`ing it."
+    "TAGS_NONE": "No tags exist. Try `add`ing some!"
+
+    "VOTE_END": "The vote has **ended**.\n\n**Question:** {{{vote.question}}}\n\n**THE WINNING OPTION IS...** {{{winner.title}}} with {{winner.votes}} votes\n\n**Options:**\n{{#vote.options}}{{{title}}} - {{votes}} votes\n{{/vote.options}}"
+    "VOTE_START": "A vote has been **started** in this channel:\n\n**Question:** {{{vote.question}}}\n\n**Options:**\n{{#vote.options}}{{{title}}} - {{votes}} votes\n{{/vote.options}}"
+    "VOTE_STATUS": "A vote is in **progress** in this channel:\n\n**Question:** {{{vote.question}}}\n\n**Options:**\n{{#vote.options}}{{{title}}} - {{votes}} votes\n{{/vote.options}}"
+
+  "commands":
+    "cat": "cat"
+    "choose": "choose"
+    "dog": "dog"
+    "eval": "eval"
+    "find": "find"
+    "help": "help"
+    "id": "id"
+    "info": "info"
+    "join": "join"
+    "killbot": "sleep"
+    "next": "next"
+    "perms": "perms"
+    "ping": "ping"
+    "rolldice": "rolldice"
+    "status": "status"
+    "tags": "tag"
+    "vote": "vote"

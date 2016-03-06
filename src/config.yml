@@ -1,0 +1,25 @@
+---
+  # Discord authentication credentials
+  discordAuth:
+    email: 'BOT USERNAME GOES HERE'
+    password: 'BOT PASSWORD GOES HERE'
+
+  # Personalization settings
+  personalization:
+    # Bot language (see Languages folder).
+    language: en
+
+    # Default game statuses. Set to false to disable.
+    defaultStatuses: [
+      'woooot'
+      ]
+
+  # Permissions
+  permissions:
+    # Your owner id. Find by using <@yourname>. You only need the numbers.
+    owner: '134122930828214273'
+
+    friends: [
+      # Friends list, friends can execute some extra commands.
+      # '97102292997636096'
+      ]
