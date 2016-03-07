@@ -1,7 +1,7 @@
 ---
   # Discord authentication credentials
   discordAuth:
-    email: 'BOT USERNAME GOES HERE'
+    email: 'BOT EMAIL GOES HERE'
     password: 'BOT PASSWORD GOES HERE'
 
   # Personalization settings
@@ -21,5 +21,6 @@
 
     friends: [
       # Friends list, friends can execute some extra commands.
-      # '97102292997636096'
+      # '30920302300230402', 
+      # '01293456124123232'
       ]
