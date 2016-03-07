@@ -11,7 +11,7 @@ module.exports = (Bot) ->
 
     if args.length == 0
       return Bot.Messenger.sendMessage message.channel, 'COMMAND_USAGE',
-        usage: "#{Bot.user.username} #{Bot.Language.command.join} <Discord Invite URL>"
+        usage: "#{Bot.user.username} #{Bot.Language.commands.join} <Discord Invite URL>"
         does: "Attempts to join the given server through the invite link provided."
 
     Bot.getInvite args[0], (err, invite) ->
