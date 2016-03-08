@@ -112,6 +112,7 @@ module.exports = (Bot) ->
       Bot.Messenger.sendMessage message.channel, 'VOTE_END',
         vote: Bot.HelperBotInternal[voteName]
         winner: winner
+        Bot.HelperBotInternal[voteName].options = []
 
     else
       # No options specified, lets see if this is an actual option
