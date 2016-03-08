@@ -24,7 +24,7 @@ module.exports = (Bot) ->
 
     if (not Utils.isFriend message.author) and message.channel.isPrivate
       # Someone we don't know tried to talk to me in Private messages.
-      return Bot.Messenger.reply message, 'PHRASE:INVALID_PERMISSIONS', perm: 'You cannot use private messages with me.'
+      return Bot.Messenger.reply message, 'INVALID_PERMISSIONS', perm: 'You cannot use private messages with me.'
 
     debug "#{message.author.id} (@#{message.author.username}): #{message.content}"
     msgContent = splitargs message.content
