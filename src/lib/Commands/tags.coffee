@@ -40,10 +40,12 @@ module.exports = (Bot) ->
         # Tag exists
         return Bot.Messenger.sendMessage message.channel, 'ERROR',
           err: "That tag already exists."
+      
+      tagContent = args[2].replace /@everyone/gi, '[at]everyone'
 
       tags[tagname] =
         creator: message.author.id
-        content: args[2]
+        content: tagContent
 
       fs.writeFile path.join(__dirname, '..', '..', 'tags.json'), JSON.stringify(tags), 'utf8', (err) ->
         if err
