@@ -22,6 +22,7 @@ module.exports = (Bot) ->
       returned = eval evalString
 
       if returned == undefined
+        returned = returned.replace /@everyone/gi, '[at]everyone'
         Bot.Messenger.reply message, 'SUCCESS'
       else
         message.reply "```\n#{returned}\n```"
