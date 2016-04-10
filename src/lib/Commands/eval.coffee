@@ -1,5 +1,5 @@
 ###
-# Ping command
+# Eval command
 ###
 module.exports = (Bot) ->
   # Load Utils.
@@ -24,7 +24,7 @@ module.exports = (Bot) ->
       if returned == undefined
         Bot.Messenger.reply message, 'SUCCESS'
       else
-        returned = returned.replace /@everyone/gi, '[at]everyone'
+        returned = String(returned).replace /@everyone/gi, '[at]everyone'
         message.reply "```\n#{returned}\n```"
     catch e
       Bot.Messenger.reply message, 'ERROR', err: e
