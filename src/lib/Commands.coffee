@@ -17,6 +17,7 @@ module.exports = (Bot) ->
   Commands[Bot.Language.commands.next] = require('./Commands/next') Bot
   Commands[Bot.Language.commands.perms] = require('./Commands/perms') Bot
   Commands[Bot.Language.commands.ping] = require('./Commands/ping') Bot
+  Commands[Bot.Language.commands.rip] = require('./Commands/rip') Bot
   Commands[Bot.Language.commands.rolldice] = require('./Commands/rolldice') Bot
   Commands[Bot.Language.commands.status] = require('./Commands/status') Bot
   Commands[Bot.Language.commands.tags] = require('./Commands/tags') Bot
