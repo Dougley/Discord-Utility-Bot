@@ -11,4 +11,4 @@ module.exports = (Bot) ->
       ripee = ripee.join ' '
       ripee = encodeURIComponent ripee
 
-    Bot.sendMessage message.channel, 'https://ripme.xyz' + (ripee != false ? ('/' + ripee) : '')
+    Bot.sendMessage message.channel, 'https://ripme.xyz' + (if ripee != false then '/' + ripee else '')
