@@ -17,8 +17,8 @@ There's a lot more commands, and you can find them all on the [wiki](https://git
 4. `npm install`
 5. `gulp`
 6. `cd dist`
-7. Edit `config.yml` with a text editor of your choosing. **Do NOT use Notpad**
+7. Edit `config.yml` with a text editor of your choosing. **Do NOT use Notepad**
     - Put your bot's email and password in
-    - Put your ID into the owner id (use `<@mention>` to find your ID)
+    - Put your ID into the owner id (use `\@mention` to find your ID)
     - Put any trusted friends into the friends list
 8. `node app.js`

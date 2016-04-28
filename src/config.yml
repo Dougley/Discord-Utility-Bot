@@ -16,11 +16,11 @@
 
   # Permissions
   permissions:
-    # Your owner id. Find by using <@yourname>. You only need the numbers.
+    # Your owner id. Find by using \@yourname. You only need the numbers.
     owner: '134122930828214273'
 
     friends: [
       # Friends list, friends can execute some extra commands.
-      # '30920302300230402', 
+      # '30920302300230402',
       # '01293456124123232'
       ]
